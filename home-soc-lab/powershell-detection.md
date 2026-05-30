@@ -2,53 +2,61 @@
 
 ## Objective
 
-Detect PowerShell execution activity using Sysmon telemetry.
+Detect PowerShell execution activity using Sysmon telemetry and investigate process creation events associated with scripting activity.
 
 ## Event Information
 
-- Event ID: 1
-- Event Type: Process Create
-- User: Agata
-- Process: powershell.exe
+| Field | Value |
+|---------|---------|
+| Event ID | 1 |
+| Event Type | Process Creation |
+| User | Agata |
+| Process | powershell.exe |
+
+## Investigation
+
+Sysmon generated an Event ID 1 (Process Create) after PowerShell was launched on the endpoint.
+
+The following process was observed:
+
+```text
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+```
+
+The event captured:
+
+- Process Path
+- Command Line
+- User Context
+- Process ID
+- Logon Session
+- SHA256 Hash
+
+This information is valuable during threat hunting and incident response investigations.
 
 ## Evidence
 
-Sysmon recorded the creation of:
-
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-
-## Analysis
-
-The process creation event confirms that PowerShell was executed on the host.
-
-Sysmon captured:
-
-- Process path
-- Command line
-- User context
-- Process ID
-- Logon session
-
-This telemetry is frequently used by SOC analysts during threat hunting and incident investigations.
+![PowerShell Execution](screenshots/powershell-process-create.png)
 
 ## Security Relevance
 
-PowerShell is commonly abused by attackers for:
+PowerShell is frequently abused by threat actors for:
 
-- Malware execution
-- Script execution
-- Download cradles
-- Credential theft
-- Lateral movement
+- Malware Execution
+- Script-Based Attacks
+- Download Cradles
+- Credential Theft
+- Lateral Movement
+- Living-off-the-Land Techniques
 
 ## MITRE ATT&CK
 
-T1059.001 - PowerShell
+- T1059.001 – PowerShell
 
 ## Skills Demonstrated
 
-- Sysmon
-- Process Monitoring
+- Sysmon Monitoring
+- Process Analysis
 - Windows Logging
 - Threat Hunting
-- Event Analysis
+- Endpoint Investigation
