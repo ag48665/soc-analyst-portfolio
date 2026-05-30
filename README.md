@@ -6,6 +6,7 @@ Portfolio showcasing hands-on cybersecurity investigations, detection engineerin
 
 * Windows Event Log Analysis
 * Sysmon
+* Sigma Rules
 * Threat Hunting
 * Incident Response
 * Detection Engineering
@@ -24,6 +25,10 @@ Portfolio showcasing hands-on cybersecurity investigations, detection engineerin
 * Sysmon Installation Verification
 * Process Creation Monitoring
 * PowerShell Execution Detection
+
+### Detection Engineering
+
+* Sigma Failed Logon Detection
 
 ## Environment
 
@@ -46,18 +51,6 @@ Portfolio showcasing hands-on cybersecurity investigations, detection engineerin
 * Detection Engineering
 * Incident Response
 
-## Projects
-
-### Home SOC Lab
-
-- Windows Event Investigation
-- Sysmon Installation Verification
-- Sysmon Process Creation Monitoring
-- PowerShell Execution Detection
-- Sigma Failed Logon Detection
-
-- 
-
 ## MITRE ATT&CK Techniques Covered
 
 * T1059 – Command and Scripting Interpreter
@@ -72,5 +65,6 @@ home-soc-lab/
 ├── sysmon-installation.md
 ├── sysmon-process-creation.md
 ├── powershell-detection.md
+├── sigma-failed-logon-detection.md
 └── screenshots/
 ```
