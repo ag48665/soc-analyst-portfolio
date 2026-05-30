@@ -1,38 +1,64 @@
 # SOC Analyst Portfolio
 
-Portfolio showcasing hands-on cybersecurity investigations, detection engineering, threat hunting and SIEM analysis.
+Portfolio showcasing hands-on cybersecurity investigations, detection engineering, threat hunting, and security monitoring.
 
 ## Skills
 
-- Windows Event Log Analysis
-- Sysmon
-- Splunk
-- Sigma Rules
-- Threat Hunting
-- Incident Response
-- MITRE ATT&CK
+* Windows Event Log Analysis
+* Sysmon
+* Threat Hunting
+* Incident Response
+* Detection Engineering
+* MITRE ATT&CK
+* Security Monitoring
 
-## Projects
+## Home SOC Lab Projects
 
-Coming soon...
+### Windows Event Investigation
 
-# Home SOC Lab
+* Successful Logon Analysis (Event ID 4624)
+* Failed Logon Analysis (Event ID 4625)
+
+### Sysmon Monitoring
+
+* Sysmon Installation Verification
+* Process Creation Monitoring
+* PowerShell Execution Detection
 
 ## Environment
 
-Host Machine
-- Dell Latitude 9410
-- Windows 11
-- 16 GB RAM
+### Host Machine
 
-Virtual Machine
-- Windows 11 Enterprise Evaluation
-- Oracle VirtualBox
+* Dell Latitude 9410
+* Windows 11
+* 16 GB RAM
+
+### Virtual Machine
+
+* Windows 11 Enterprise Evaluation
+* Oracle VirtualBox
 
 ## Learning Goals
 
-- Windows Event Logs
-- Sysmon
-- Threat Hunting
-- Detection Engineering
-- Incident Response
+* Windows Event Logs
+* Sysmon
+* Threat Hunting
+* Detection Engineering
+* Incident Response
+
+## MITRE ATT&CK Techniques Covered
+
+* T1059 – Command and Scripting Interpreter
+* T1059.001 – PowerShell
+* T1110 – Brute Force
+
+## Repository Structure
+
+```text
+home-soc-lab/
+├── windows-event-analysis.md
+├── sysmon-installation.md
+├── sysmon-process-creation.md
+├── powershell-detection.md
+└── screenshots/
+```
