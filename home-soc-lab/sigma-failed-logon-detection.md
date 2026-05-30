@@ -21,6 +21,17 @@ detection:
 
 level: medium
 ```
+## Evidence
+
+### Windows Event ID 4625
+
+![Failed Logon Event](screenshots/failed-logon-event-4625.png)
+
+### Sigma Detection Rule
+
+The Sigma rule below detects Event ID 4625 events from Windows Security logs.
+
+---
 
 ## Analysis
 
