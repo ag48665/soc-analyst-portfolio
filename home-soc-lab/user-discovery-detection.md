@@ -15,6 +15,7 @@ Process Creation Event
 - whoami.exe
 
 ## Evidence
+![Whoami Execution](screenshots/whoami-user-discovery.png)
 
 Sysmon recorded the execution of:
 
@@ -23,6 +24,7 @@ C:\Windows\System32\whoami.exe
 Parent Process:
 
 powershell.exe
+
 
 ## Analysis
 
